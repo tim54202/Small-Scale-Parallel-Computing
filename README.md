@@ -12,9 +12,9 @@ CSR Format Conversion: The sparse matrix is first converted to CSR (Compressed S
 
 Generating Random 2D Vector: A 2D vector with random double-precision floating-point numbers is generated to be multiplied by the sparse matrix.
 
-### OpenMP Implementation: The sparse matrix multiplication is implemented using OpenMP. The code parallelizes the for-loop iterations using #pragma omp parallel for, distributing the workload across multiple threads. The performance is evaluated by varying the number of threads from 1 to 16 to test scalability.
+OpenMP Implementation: The sparse matrix multiplication is implemented using OpenMP. The code parallelizes the for-loop iterations using #pragma omp parallel for, distributing the workload across multiple threads. The performance is evaluated by varying the number of threads from 1 to 16 to test scalability.
 
-### CUDA Implementation: The CUDA implementation leverages GPU parallelism by distributing the matrix-vector multiplication tasks across multiple GPU threads. The multiplyKernel function performs the matrix-vector multiplication, with different thread counts used to evaluate performance.
+CUDA Implementation: The CUDA implementation leverages GPU parallelism by distributing the matrix-vector multiplication tasks across multiple GPU threads. The multiplyKernel function performs the matrix-vector multiplication, with different thread counts used to evaluate performance.
 
 ## Performance Evaluation: The performance of both OpenMP and CUDA implementations is measured using FLOPS (Floating Point Operations Per Second). CUDA's performance is compared across various thread counts, while OpenMP's performance is analyzed by increasing the number of CPU threads.
 
