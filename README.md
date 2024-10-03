@@ -16,7 +16,7 @@ OpenMP Implementation: The sparse matrix multiplication is implemented using Ope
 
 CUDA Implementation: The CUDA implementation leverages GPU parallelism by distributing the matrix-vector multiplication tasks across multiple GPU threads. The multiplyKernel function performs the matrix-vector multiplication, with different thread counts used to evaluate performance.
 
-## Performance Evaluation: The performance of both OpenMP and CUDA implementations is measured using FLOPS (Floating Point Operations Per Second). CUDA's performance is compared across various thread counts, while OpenMP's performance is analyzed by increasing the number of CPU threads.
+Performance Evaluation: The performance of both OpenMP and CUDA implementations is measured using FLOPS (Floating Point Operations Per Second). CUDA's performance is compared across various thread counts, while OpenMP's performance is analyzed by increasing the number of CPU threads.
 
 ## Results
 FLOPS Analysis: The project analyzes the FLOPS performance of both OpenMP and CUDA implementations, with CUDA demonstrating significant advantages in parallel computing due to its ability to handle larger thread counts.
